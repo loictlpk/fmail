@@ -12,7 +12,7 @@ rm $HOME/fortiapi/auth/happy_cookie.txt 2> /dev/null
 ```bash
 -rw-r--r-- 1 user group ..... auth/auth.log	 
 ```	
-if it's false do
+### if it's false do
 ```bash
 chmod 644 auth/auth.log
 ```
