@@ -1,0 +1,26 @@
+[Use]
+	fmail <flags> <choices> [args...] <add_flags>
+
+
+[flags]
+	[init]
+	-c connect 		: user connection
+
+	[information]
+	-d display 		: display informations
+		
+	[management]
+	--add-system		: add system rule
+	--remove-system		: remove system rule
+	--add-personal		: add personal rule
+	--remove-personal	: remove personal rule
+
+[choices]
+	-g global		: global infos
+	-q quarantine		: system quarantine 
+	-s safelist		: system safelist
+	-b blocklist		: system blocklist
+
+[additional flags]
+	-c count 		: count number of iteration
+ 
