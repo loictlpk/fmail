@@ -1,3 +1,6 @@
+-- use --
+./fmail
+
 -- add your domain in /etc/hosts --
 	mydomain	x.x.x.x
 
