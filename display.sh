@@ -2,17 +2,13 @@
 
 source ./source/variables
 
-choice=$action
-arg=$choice
-
-
 case $choice in
 	quarantine | -q)
 		quarantine_list=$((for folder in FortiGuard-Antispam ; do
 					curl -s -k --cookie $cookie "https://$domain/api/v1/QuarantineMailDisplay?startindex=0&pageSize=500&type=system&folder=$folder" | jq '.collection | .[] | .env_from' | tr -d ['"']
 				done) | cut -d"@" -f2 | sort -hr)
 
-		if [[ "$arg" == "-c" ]] || [[ "$arg" == "count" ]] ; then
+		if [[ "$3" == "-c" ]] || [[ "$3" == "--count" ]] || [[ "$3" == "count" ]] ; then
 			echo "$quarantine_list" | uniq -c | sort -hr
 		else
 			echo "$quarantine_list"
