@@ -5,8 +5,8 @@ mydomain.com  	x.x.x.x
 ## update ~/.bashrc with
 ```bash
 ###for fortiapi
-echo 2 > $HOME/fortiapi/auth/auth.log
-rm $HOME/fortiapi/auth/happy_cookie.txt 2> /dev/null
+echo 2 > $HOME/fmail/auth/auth.log
+rm $HOME/fmail/auth/happy_cookie.txt 2> /dev/null
 ```
 ## auth.log permissions must be
 ```bash
