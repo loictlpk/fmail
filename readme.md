@@ -21,6 +21,8 @@ chmod 644 auth/auth.log
 ```bash
 domain="mydomain.com"
 ```
+
+
 # use
 ```bash
 ./fmail
