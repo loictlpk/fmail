@@ -29,7 +29,7 @@ sudo mv -r fmail /bin/fortiapi
 ## create wrapper script
 ```bash
 cd /bin
-sudo touch fmail && sudo chmod +x fmail && sudo nano fmail
+sudo touch fmail && sudo chmod +x fmail && chown -R loic /bin/fortiapi && sudo nano fmail
 ```
 ### script content
 ```bash
