@@ -2,11 +2,29 @@
 ## add your domain in /etc/hosts
 mydomain.com	    x.x.x.x
 
-## update ~/.bashrc with
+## update root crontab with
 ```bash
+sudo crontab -e -u root
+```
+#### crontab content
+```bash
+@reboot bash $HOME/fmail.sh
+```
+#### connect as root
+```bash
+sudo su
+nano $HOME/fmail.sh
+```
+#### script content
+```bash
+#!/bin/bash
 ###for fortiapi
-echo 2 > $HOME/fortiapi/auth/auth.log
-rm $HOME/fortiapi/auth/happy_cookie.txt 2> /dev/null
+sudo echo 2 > /bin/fortiapi/auth/auth.log
+sudo rm /bin/fortiapi/auth/happy_cookie.txt 2> /dev/null
+```
+#### make executable
+```bash
+chmod +x $HOME/fmail.sh
 ```
 ## auth.log permissions must be
 ```bash
