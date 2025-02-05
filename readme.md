@@ -1,6 +1,6 @@
 # Before using
 ## add your domain in /etc/hosts
-mydomain.com	x.x.x.x
+mydomain.com  	x.x.x.x
 
 ## update ~/.bashrc with
 ```bash
