@@ -19,7 +19,7 @@ chmod 644 auth/auth.log
 
 ## modify source/variables and adjust domain variable --
 ```bash
-domain=mydomain.com
+domain="mydomain.com"
 ```
 # use
 ```bash
