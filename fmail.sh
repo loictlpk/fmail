@@ -10,24 +10,23 @@ if grep "0" $log_auth > /dev/null & test -f $cookie; then
 		;;
 
 		display | "-d" )
-			# arg = quarantine, blocklist, safelist, global, etc.	| arg = additional flag : -c, etc.
-			bash display.sh $choice $arg $add_flag
+			bash display.sh $@
 		;;
 
 		--add-system )
-			bash manage.sh $action $choice $arg $arg2 
+			bash manage.sh $@
 		;;
 
 		--remove-system )
-			bash manage.sh $action $choice $arg $arg2 
+			bash manage.sh $@
 		;;
 
 		--add-personal )
-			bash manage.sh $action $choice $arg $arg2 $arg3
+			bash manage.sh $@
 		;;
 
 		--remove-personal )
-			bash manage.sh $action $choice $arg $arg2 $arg3
+			bash manage.sh $@
 		;;
 
 		* | -h | --help )
