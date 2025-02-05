@@ -17,7 +17,7 @@ rm $HOME/fmail/auth/happy_cookie.txt 2> /dev/null
 chmod 644 auth/auth.log
 ```
 
-## modify source/variables and adjust domain variable --
+## modify source/variables and adjust domain variable
 ```bash
 domain="mydomain.com"
 ```
